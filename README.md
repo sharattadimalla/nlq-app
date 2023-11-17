@@ -4,11 +4,13 @@ The goal is to build a natural language question and answer app using LLM on our
 
 ## Design
 
-FrontEnd Framework --> Streamlit (Serves as UI)
-LLM Framework --> LangChain (composable application using Language Models, prompt templates, agents or chains)
-LLM --> OpenAI (Language Model used)
-Data --> Public Credit Card Complaints dataset on Kaggle
-Data Store SQLite (DB) | Apache Spark DataFrame | Apache Spark SQL
+|Component | Framework | Function |
+|----------|-----------|----------|
+| FrontEnd UI | Streamlit | UI |
+| LLM Framework | LangChain | composing apps using Language Models, prompt templates, agents or chains |
+| LLM | OpenAI | Language Model used |
+| Data | NA |  Public Credit Card Complaints dataset on Kaggle |
+| Data Store | SQLite (DB) or Apache Spark DataFrame or  Apache Spark SQL|
 
 ## Notebooks
 
