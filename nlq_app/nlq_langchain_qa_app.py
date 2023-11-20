@@ -25,15 +25,16 @@ dotenv.load_dotenv()
 st.title(
     """
     :sparkles: Sherlock Investigative Service: Natural language style Q&A
+    Powered by Streamlit,LangChain,LLM & data
     """
 )
 
 # Sidebar
 LLMs = ["OpenAI", "GPT4All"]
-DATASETS = ["CFPB:Complaints"]
+DATASETS = ["CFPB_Complaints"]
 with st.sidebar:
-    selected_llm = st.sidebar.selectbox("Select an LLM", list(LLMs))
-    selected_data = st.sidebar.selectbox("Select a Dataset", list(DATASETS))
+    selected_llm = st.sidebar.radio("Select an LLM", list(LLMs))
+    selected_data = st.sidebar.radio("Select a Dataset", list(DATASETS))
 
 # Setup db, table and data
 FILE_NM = "credit_card_complaints.csv"

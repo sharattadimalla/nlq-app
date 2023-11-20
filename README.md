@@ -2,6 +2,10 @@
 
 The goal is to build a natural language question and answer app using LLM on our own data
 
+## Demo
+
+![Demo](img/llm_demo.gif)
+
 ## Design
 
 | Component     | Framework                                                 | Function                                                                 |
